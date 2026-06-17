@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 const Navbar = () => {
     return (
         <header className=''>
-            <p className='text-center bg-primary-3 pt-[16px] pb-[15px]'>
+            <p className='text-center bg-primary-3 pt-[16px] pb-[15px] font-Akkurat font-top-nav-12'>
                 10% Off when you subscribe to our emails. T&Cs apply
             </p>
             <nav className='max-w-[1440px] w-full mx-auto px-[80px]'>
@@ -18,6 +19,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 <Link href='/'>
+                    <Image src='/assets/icons/logo.svg' alt="bagzei" width={97} height={28} />
                 </Link>
             </nav>
         </header>
