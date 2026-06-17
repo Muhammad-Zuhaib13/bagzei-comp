@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ScreenContainer from "./ScreenContainer";
 import Link from "next/link";
+import Subscribe from "./Subscribe";
 
 const customerCareData = {
   title: "Customer Care",
@@ -46,10 +47,67 @@ const newsLetter = {
     "Subscribe to the Bagzei newsletter and enjoy exclusive access to new collections, and special offers.",
 };
 const socialIcons = [
-  { name: "Facebook", href: "#", src: "/assets/icons/facebook.svg", alt: "facebook icon" },
-  { name: "Twitter", href: "#", src: "/assets/icons/twitter.svg", alt: "twitter icon" },
-  { name: "Instagram", href: "#", src: "/assets/icons/instagram.svg", alt: "instagram icon" },
-  { name: "Youtube", href: "#", src: "/assets/icons/youtube.svg", alt: "youtube icon" },
+  {
+    name: "Youtube",
+    href: "#",
+    src: "/assets/icons/youtube.svg",
+    alt: "youtube icon",
+  },
+  {
+    name: "Facebook",
+    href: "#",
+    src: "/assets/icons/facebook.svg",
+    alt: "facebook icon",
+  },
+  {
+    name: "Twitter",
+    href: "#",
+    src: "/assets/icons/twitter.svg",
+    alt: "twitter icon",
+  },
+  {
+    name: "Instagram",
+    href: "#",
+    src: "/assets/icons/instagram.svg",
+    alt: "instagram icon",
+  },
+];
+const paymentData = [
+  {
+    name: "Visa",
+    src: "/assets/icons/pay/ppay.svg",
+    alt: "visa icon",
+  },
+  {
+    name: "Visa",
+    src: "/assets/icons/pay/visa.svg",
+    alt: "visa icon",
+  },
+  {
+    name: "Mastercard",
+    src: "/assets/icons/pay/bankTransfer.svg",
+    alt: "mastercard icon",
+  },
+  {
+    name: "American Express",
+    src: "/assets/icons/pay/americanPay.svg",
+    alt: "american express icon",
+  },
+  {
+    name: "American Express",
+    src: "/assets/icons/pay/jcb.svg",
+    alt: "american express icon",
+  },
+  {
+    name: "Union Pay",
+    src: "/assets/icons/pay/unionpay.svg",
+    alt: "american express icon",
+  },
+  {
+    name: "Apple Pay",
+    src: "/assets/icons/pay/applePay.svg",
+    alt: "american express icon",
+  },
 ];
 const Footer = () => {
   return (
@@ -110,30 +168,45 @@ const Footer = () => {
                     {newsLetter.title}
                   </p>
                 </div>
-                <div className="flex flex-col gap-[24px]">
-                  <p className="font-footer-link-14 font-Akkurat text-primary-2">
-                    {newsLetter.description}
-                  </p>
+                <div className="flex flex-col h-full justify-between">
+                  <div className="flex flex-col gap-[24px]">
+                    <p className="font-footer-link-14 font-Akkurat text-primary-2">
+                      {newsLetter.description}
+                    </p>
 
-                  <div className="flex gap-[20px] items-center">
-                    <input
-                      type="email"
-                      placeholder="Your email address"
-                      className="bg-primary-1 border border-primary-3 placeholder:text-primary-3 text-primary-2 focus:outline-none"
-                    />
-                    <button className="bg-primary-2 text-primary-1 hover:bg-primary-3 py-[10px] px-[20px]">
-                      Subscribe
-                    </button>
+                    <Subscribe />
+                    <div className="flex gap-[20px] items-center">
+                      {socialIcons.map((icon, index) => (
+                        <Link
+                          key={index}
+                          href="#"
+                          className="text-primary-2 hover:underline"
+                        >
+                          <Image
+                            alt={icon.alt}
+                            src={icon.src}
+                            width={16}
+                            height={16}
+                          />
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex gap-[20px] items-center">
-                    <Link href="#" className="text-primary-2 hover:underline">
-                      <Image
-                        alt="social media icons"
-                        src=""
-                        width={16}
-                        height={16}
-                      />
-                    </Link>
+                  <div className="flex flex-col gap-[10px]">
+                    <p className="font-footer-copyright-14 font-Akkurat text-primary-2">
+                      BAGZEI ACCEPTS
+                    </p>
+                    <div className="flex gap-[17px]">
+                      {paymentData?.map((icon, index) => (
+                        <Image
+                          key={index}
+                          alt={icon.alt}
+                          src={icon.src}
+                          width={40}
+                          height={24}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
