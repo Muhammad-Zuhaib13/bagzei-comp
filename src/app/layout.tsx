@@ -13,7 +13,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 const Akkurat = localFont({
-  src: "./fonts/Akkurat-Bold.ttf",
+  src: "./fonts/Akkurat.ttf",
   variable: "--font-akkurat",
   weight: "400",
 });

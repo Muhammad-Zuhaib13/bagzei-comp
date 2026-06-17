@@ -7,8 +7,8 @@ const Navbar = () => {
             <p className='text-center bg-primary-3 pt-[16px] pb-[15px] font-Akkurat font-top-nav-12'>
                 10% Off when you subscribe to our emails. T&Cs apply
             </p>
-            <nav className='max-w-[1440px] w-full mx-auto px-[80px]'>
-                <div className='flex flex-row gap-[20px]'>
+            <nav className='max-w-[1440px] w-full mx-auto px-[80px] flex flex-row justify-between items-center py-[26px]'>
+                <div className='flex flex-row gap-[20px] font-Akkurat font-Akkurat font-normal font-menu-nav-14'>
                     <Link href='/'>New In</Link>
                     <Link href='/'>Collections</Link>
                     <Link href='/'>Sale</Link>
@@ -21,6 +21,25 @@ const Navbar = () => {
                 <Link href='/'>
                     <Image src='/assets/icons/logo.svg' alt="bagzei" width={97} height={28} />
                 </Link>
+                <ul className='flex flex-row gap-[20px] items-center font-Akkurat font-normal font-menu-nav-14'>
+                    <li className='flex flex-row gap-[4px] items-center'>
+                        Ship to:
+                        <Image src='/assets/icons/flag.svg' alt="Oman" width={26.7} height={20} />
+                        OM
+                    </li>
+                    <li>
+                        <Image src="/assets/icons/user.svg" alt="user" width={20} height={20} />
+                    </li>
+                    <li>
+                        <Image src="/assets/icons/favorite.svg" alt="favorite" width={20} height={20} />
+                    </li>
+                    <li>
+                        <Image src="/assets/icons/cart.svg" alt="cart" width={20} height={20} />
+                    </li>
+                    <li>
+                        <Image src="/assets/icons/menu-hamburger.svg" alt="user" width={20} height={20} />
+                    </li>
+                </ul>
             </nav>
         </header>
     )
