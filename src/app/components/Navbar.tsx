@@ -2,8 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 const Navbar = () => {
     return (
-        <header className='max-w-[1440px] w-full mx-auto px-[80px] bg-yellow-400'>
-            <nav className=''>
+        <header className=''>
+            <p className='text-center bg-primary-3 pt-[16px] pb-[15px]'>
+                10% Off when you subscribe to our emails. T&Cs apply
+            </p>
+            <nav className='max-w-[1440px] w-full mx-auto px-[80px]'>
                 <div className='flex flex-row gap-[20px]'>
                     <Link href='/'>New In</Link>
                     <Link href='/'>Collections</Link>
