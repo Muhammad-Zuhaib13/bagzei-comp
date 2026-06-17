@@ -5,12 +5,56 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-white: #ffffff;
+  --color-black: #1A1A1A;
+
+  /* font-sizes */
+  --font-top-nav-12: 12px;
+  --line-height-top-nav-12: 100%;
+
+  --font-menu-nav-14: 14px;
+  --line-height-menu-nav-14: 100%;
+
+  --font-banner-title-50: 50px;
+  --line-height-banner-title-50: 100%;
+
+  --font-banner-text-18: 18px;
+  --line-height-banner-text-18: 100%;
+
+  --font-banner-link-18: 18px;
+  --line-height-banner-link-18: 100%;
+
+  --font-text-18: 18px;
+  --line-height-text-18: 100%;
+
+  --font-section-title-32: 32px;
+  --line-height-section-title-32: 100%;
+
+  --font-section-title-32: 32px;
+  --line-height-section-title-32: 100%;
+
+  --font-slider-card-title-20: 20px;
+  --line-height-slider-card-title-20: 100%;
+
+  --font-footer-title-20: 20px;
+  --line-height-footer-title-20: 100%;
+
+  --font-footer-link-14: 14px;
+  --line-height-footer-link-14: 28px;
+
+  --font-footer-copyright-14: 14px;
+  --line-height-footer-copyright-14: 28px;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-white: #ffffff;
+    --color-black: #1A1A1A;
+
   }
 }
 
@@ -24,4 +68,140 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    /* font-sizes */
+    --font-top-nav-12: 12px;
+    --line-height-top-nav-12: 100%;
+
+    --font-menu-nav-14: 14px;
+    --line-height-menu-nav-14: 100%;
+
+    --font-banner-title-50: 40px;
+    --line-height-banner-title-50: 100%;
+
+    --font-banner-text-18: 16px;
+    --line-height-banner-text-18: 100%;
+
+    --font-banner-link-18: 18px;
+    --line-height-banner-link-18: 100%;
+
+    --font-text-18: 18px;
+    --line-height-text-18: 100%;
+
+    --font-section-title-32: 28px;
+    --line-height-section-title-32: 100%;
+
+    --font-slider-card-title-20: 18px;
+    --line-height-slider-card-title-20: 100%;
+
+    --font-footer-title-20: 17px;
+    --line-height-footer-title-20: 100%;
+
+    --font-footer-link-14: 13px;
+    --line-height-footer-link-14: 24px;
+
+    --font-footer-copyright-14: 14px;
+    --line-height-footer-copyright-14: 28px;
+
+  }
+}
+
+@media (max-width: 639px) {
+  :root {
+    /* font-sizes */
+    --font-top-nav-12: 10px;
+    --line-height-top-nav-12: 100%;
+
+    --font-menu-nav-14: 14px;
+    --line-height-menu-nav-14: 100%;
+
+    --font-banner-title-50: 24px;
+    --line-height-banner-title-50: 100%;
+
+    --font-banner-text-18: 14px;
+    --line-height-banner-text-18: 100%;
+
+    --font-banner-link-18: 16px;
+    --line-height-banner-link-18: 100%;
+
+    --font-text-18: 14px;
+    --line-height-text-18: 100%;
+
+
+    --font-section-title-32: 20px;
+    --line-height-section-title-32: 100%;
+
+
+    --font-slider-card-title-20: 14px;
+    --line-height-slider-card-title-20: 100%;
+
+    --font-footer-title-20: 16px;
+    --line-height-footer-title-20: 100%;
+
+    --font-footer-link-14: 13px;
+    --line-height-footer-link-14: 24px;
+
+    --font-footer-copyright-14: 12px;
+    --line-height-footer-copyright-14: 28px;
+
+  }
+}
+
+/* Font Classes */
+.font-top-nav-12 {
+  font-size: var(--font-top-nav-12);
+  line-height: var(--line-height-top-nav-12);
+}
+
+.font-menu-nav-14 {
+  font-size: var(--font-menu-nav-14);
+  line-height: var(--line-height-menu-nav-14);
+}
+
+.font-banner-title-50 {
+  font-size: var(--font-banner-title-50);
+  line-height: var(--line-height-banner-title-50);
+}
+
+.font-banner-text-18 {
+  font-size: var(--font-banner-text-18);
+  line-height: var(--line-height-banner-text-18);
+}
+
+.font-banner-link-18 {
+  font-size: var(--font-banner-link-18);
+  line-height: var(--line-height-banner-link-18);
+}
+
+.font-text-18 {
+  font-size: var(--font-text-18);
+  line-height: var(--line-height-text-18);
+}
+
+.font-section-title-32 {
+  font-size: var(--font-section-title-32);
+  line-height: var(--line-height-section-title-32);
+}
+
+.font-slider-card-title-20 {
+  font-size: var(--font-slider-card-title-20);
+  line-height: var(--line-height-slider-card-title-20);
+}
+
+.font-footer-title-20 {
+  font-size: var(--font-footer-title-20);
+  line-height: var(--line-height-footer-title-20);
+}
+
+.font-footer-link-14 {
+  font-size: var(--font-footer-link-14);
+  line-height: var(--line-height-footer-link-14);
+}
+
+.font-footer-copyright-14 {
+  font-size: var(--font-footer-copyright-14);
+  line-height: var(--line-height-footer-copyright-14);
 }

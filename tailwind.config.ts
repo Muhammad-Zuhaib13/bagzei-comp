@@ -8,7 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Akkurat: ["var(--font-akkurat)"],
+        AkkuratBold: ["var(--font-akkurat-bold)"],
+        ChronicleDisplay: ["var(--font-chronicle-display)"],
+      },
       colors: {
+        primary: {
+          1: 'var(--color-white)',
+          2: 'var(--color-black)',
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
