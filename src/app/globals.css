@@ -9,9 +9,9 @@
   --color-black: #1A1A1A;
   --color-light-grey: #F4F4F4;
   --color-dark-grey: #C8C8C8;
-
-  /* font-sizes */
-  --font-top-nav-12: 12px;
+  --color-border-grey: #E5E5E5;
+    /* font-sizes */
+    --font-top-nav-12: 12px;
   --line-height-top-nav-12: 100%;
 
   --font-menu-nav-14: 14px;

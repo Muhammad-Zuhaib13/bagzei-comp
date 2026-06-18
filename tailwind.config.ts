@@ -20,6 +20,9 @@ const config: Config = {
           3: "var(--color-light-grey)",
           4: "var(--color-dark-grey)"
         },
+        secondary: {
+          1:"var(--color-border-grey)",
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
