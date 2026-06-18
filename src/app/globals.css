@@ -8,9 +8,10 @@
   --color-white: #ffffff;
   --color-black: #1A1A1A;
   --color-light-grey: #F4F4F4;
-
-  /* font-sizes */
-  --font-top-nav-12: 12px;
+  --color-dark-grey: #C8C8C8;
+  --color-border-grey: #E5E5E5;
+    /* font-sizes */
+    --font-top-nav-12: 12px;
   --line-height-top-nav-12: 100%;
 
   --font-menu-nav-14: 14px;
@@ -54,6 +55,7 @@
     --color-white: #ffffff;
     --color-black: #1A1A1A;
     --color-light-grey: #F4F4F4;
+    --color-dark-grey: #C8C8C8;
   }
 }
 
@@ -217,7 +219,8 @@ body {
   inset: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.48%, rgba(0, 0, 0, 0.8) 100%);
   z-index: 1;
-  pointer-events: none; /* Allows clicks to pass through to the video if needed */
+  pointer-events: none;
+  /* Allows clicks to pass through to the video if needed */
 }
 
 .video-gradient-wrapper video {
