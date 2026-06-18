@@ -35,7 +35,7 @@ const VideoBanner = () => {
     const { videoSrc, title, description, cta, bags } = data;
     
     return (
-        <div className='w-full lg:min-h-[calc(100svh-120px)] md:min-h-[calc(100svh-110px)] min-h-[calc(100svh-80px)] relative '>
+        <section className='w-full lg:min-h-[calc(100svh-120px)] md:min-h-[calc(100svh-110px)] min-h-[calc(100svh-80px)] relative '>
             <video
                 src={videoSrc ?? '/assets/videos/bagei-home-banner-video.mp4'}
                 className="h-full w-full object-cover absolute inset-0 "
@@ -134,7 +134,7 @@ const VideoBanner = () => {
 
                 </div>
             </ScreenContainer>
-        </div>
+        </section>
     )
 }
 
