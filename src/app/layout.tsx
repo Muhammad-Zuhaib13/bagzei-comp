@@ -43,7 +43,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${Akkurat.variable} ${AkkuratBold.variable} ${ChronicleDisplay.variable} antialiased`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         <Footer/>
       </body>
