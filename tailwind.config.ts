@@ -15,9 +15,13 @@ const config: Config = {
       },
       colors: {
         primary: {
-          1: 'var(--color-white)',
-          2: 'var(--color-black)',
-          3: 'var(--color-light-grey)',
+          1: "var(--color-white)",
+          2: "var(--color-black)",
+          3: "var(--color-light-grey)",
+          4: "var(--color-dark-grey)"
+        },
+        secondary: {
+          1:"var(--color-border-grey)",
         },
         background: "var(--background)",
         foreground: "var(--foreground)",
