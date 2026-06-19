@@ -141,7 +141,7 @@ const Footer = () => {
                     <div className={`md:hidden block md:my-[20px] my-[16px]`}>
                       <BorderLine />
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-[0px] md:gap-[16px]">
                       <button
                         onClick={() =>
                           setOpenAccordion(
@@ -172,8 +172,8 @@ const Footer = () => {
                       <ul
                         className={` flex flex-col overflow-hidden transition-all duration-300 ${
                           openAccordion === index
-                            ? "h-auto md:mt-[16px] mt-[20px]"
-                            : "max-h-0 md:max-h-none"
+                            ? "h-auto  md:mt-[0px] mt-[20px]"
+                            : "max-h-0  md:max-h-none"
                         }`}
                       >
                         {item?.links?.map((link, index) => (
@@ -194,7 +194,7 @@ const Footer = () => {
                     <div className={`md:hidden block md:my-[20px] my-[16px]`}>
                       <BorderLine />
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-[0px] md:gap-[16px]">
                       <button
                         onClick={() =>
                           setOpenAccordion(
@@ -219,9 +219,9 @@ const Footer = () => {
                         />
                       </button>
                       <div
-                        className={`flex flex-col overflow-hidden transition-all duration-300 ${
+                        className={` flex flex-col overflow-hidden transition-all duration-300 ${
                           openAccordion === index
-                            ? "h-auto md:mt-[16px] mt-[20px]"
+                            ? "h-auto  md:mt-[0px] mt-[20px]"
                             : "max-h-0 md:max-h-none"
                         }`}
                       >
