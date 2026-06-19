@@ -80,7 +80,8 @@ const DesignersSection = () => {
                             530: { slidesPerView: 2 },
                             640: { slidesPerView: 2.5 },
                             768: { slidesPerView: 3 },
-                            1024: { slidesPerView: 5 },
+                            1024: { slidesPerView: 4 },
+                            1279: { slidesPerView: 5 },
                         }}
                         className="w-full"
                     >
@@ -92,16 +93,16 @@ const DesignersSection = () => {
                                             <div className="max-w-[339px] w-full lg:h-[300px] h-[270px] relative overflow-hidden">
                                                 {/* Image container with zoom and grayscale effect */}
                                                 <div className='w-full h-full transition-transform duration-700 ease-out group-hover:scale-110'>
-                                                    <Image 
-                                                        src={item?.img} 
-                                                        alt={item?.title} 
-                                                        fill 
-                                                        className="object-cover object-center transition-all duration-700 ease-out grayscale group-hover:grayscale-0" 
+                                                    <Image
+                                                        src={item?.img}
+                                                        alt={item?.title}
+                                                        fill
+                                                        className="object-cover object-center transition-all duration-700 ease-out lg:grayscale group-hover:grayscale-0"
                                                     />
                                                 </div>
                                             </div>
-                                            <Link 
-                                                href={item?.href} 
+                                            <Link
+                                                href={item?.href}
                                                 className='font-Akkurat font-text-18 text-primary-2 uppercase block transition-all duration-300 ease-out'
                                             >
                                                 {item?.title}
