@@ -10,8 +10,13 @@
   --color-light-grey: #F4F4F4;
   --color-dark-grey: #C8C8C8;
   --color-border-grey: #E5E5E5;
-    /* font-sizes */
-    --font-top-nav-12: 12px;
+  --color-mid-grey: #8C8C8C;
+  --color-medium-grey: #979797;
+  /* font-sizes */
+  --font-product-16:16px;
+  --line-height-product-16:26px;
+
+  --font-top-nav-12: 12px;
   --line-height-top-nav-12: 100%;
 
   --font-menu-nav-14: 14px;
@@ -46,6 +51,29 @@
   --line-height-footer-copyright-14: 28px;
 
 
+}
+
+.font-product-16{
+  font-size: var(--font-product-16);
+  line-height: var(--line-height-product-16);
+}
+.text-mid-grey{
+  color:var(--color-medium-grey);
+}
+.bg-mid-grey{
+  background-color:var(--color-medium-grey);
+}
+.border-mid-grey{
+  border-color:var(--color-medium-grey);
+}
+.text-medium-grey{
+  color:var(--color-medium-grey);
+}
+.bg-medium-grey{
+  background-color:var(--color-medium-grey);
+}
+.border-medium-grey{
+  border-color:var(--color-medium-grey);
 }
 
 @media (prefers-color-scheme: dark) {
