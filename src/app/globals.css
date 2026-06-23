@@ -54,6 +54,8 @@
 
 }
 
+/* New Classes Start */
+
 .font-product-16 {
   font-size: var(--font-product-16);
   line-height: var(--line-height-product-16);
@@ -93,6 +95,7 @@
 .border-medium-grey {
   border-color: var(--color-medium-grey);
 }
+/* New Classes End */
 
 @media (prefers-color-scheme: dark) {
   :root {
