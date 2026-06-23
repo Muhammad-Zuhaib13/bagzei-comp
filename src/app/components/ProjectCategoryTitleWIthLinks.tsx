@@ -90,8 +90,8 @@ const ProjectCategoryTitleWIthLinks = () => {
                         className={`w-full ${style.customSwiper}`}
                     >
                         {list && list?.map((item: any) => (
-                            <SwiperSlide key={item?.title} className="!w-fit h-full group">
-                                <a href={item?.href}  className='uppercase font-menu-nav-14 text-primary-2'>
+                            <SwiperSlide key={item?.title} className="!w-fit h-full group relative pb-[7px]">
+                                <a href={item?.href}  className='uppercase font-menu-nav-14 overflow-y-clip text-primary-2 relative after:absolute after:-bottom-[8px] after:left-0 after:w-0 after:h-[1px] after:bg-[var(--color-medium-grey)] after:transition-all after:duration-300 hover:after:w-full'>
                                     {item?.title}
                                 </a>
                             </SwiperSlide>
@@ -101,7 +101,7 @@ const ProjectCategoryTitleWIthLinks = () => {
                     {/* Navigation Buttons */}
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`flex flex-col justify-center items-center absolute h-[24px] top-0 left-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isBeginning ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
+                        className={`flex flex-col shadow-sm justify-center items-center absolute h-[24px] top-0 left-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isBeginning ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
                             }`}
                         aria-label="Previous slide"
                     >
@@ -112,7 +112,7 @@ const ProjectCategoryTitleWIthLinks = () => {
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`flex flex-col justify-center items-center absolute h-[24px] top-0 right-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isEnd ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
+                        className={`flex flex-col justify-center shadow-sm items-center absolute h-[24px] top-0 right-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isEnd ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
                             }`}
                         aria-label="Next slide"
                     >

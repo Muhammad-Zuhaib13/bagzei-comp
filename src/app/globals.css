@@ -12,9 +12,10 @@
   --color-border-grey: #E5E5E5;
   --color-mid-grey: #8C8C8C;
   --color-medium-grey: #979797;
+  --color-extra-light-grey: #E0E0E0;
   /* font-sizes */
-  --font-product-16:16px;
-  --line-height-product-16:26px;
+  --font-product-16: 16px;
+  --line-height-product-16: 26px;
 
   --font-top-nav-12: 12px;
   --line-height-top-nav-12: 100%;
@@ -53,27 +54,44 @@
 
 }
 
-.font-product-16{
+.font-product-16 {
   font-size: var(--font-product-16);
   line-height: var(--line-height-product-16);
 }
-.text-mid-grey{
-  color:var(--color-medium-grey);
+.text-extra-light-grey {
+  color: var(--color-extra-light-grey);
 }
-.bg-mid-grey{
-  background-color:var(--color-medium-grey);
+
+.bg-extra-light-grey {
+  background-color: var(--color-extra-light-grey);
 }
-.border-mid-grey{
-  border-color:var(--color-medium-grey);
+
+.border-extra-light-grey {
+  border-color: var(--color-extra-light-grey);
 }
-.text-medium-grey{
-  color:var(--color-medium-grey);
+
+.text-mid-grey {
+  color: var(--color-medium-grey);
 }
-.bg-medium-grey{
-  background-color:var(--color-medium-grey);
+
+.bg-mid-grey {
+  background-color: var(--color-medium-grey);
 }
-.border-medium-grey{
-  border-color:var(--color-medium-grey);
+
+.border-mid-grey {
+  border-color: var(--color-medium-grey);
+}
+
+.text-medium-grey {
+  color: var(--color-medium-grey);
+}
+
+.bg-medium-grey {
+  background-color: var(--color-medium-grey);
+}
+
+.border-medium-grey {
+  border-color: var(--color-medium-grey);
 }
 
 @media (prefers-color-scheme: dark) {

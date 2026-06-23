@@ -334,7 +334,7 @@ const ProjectCategoryTabs = () => {
                     {/* Navigation Buttons */}
                     <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className={`flex flex-col justify-center items-center absolute h-[24px] top-[70px] left-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isBeginning ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
+                        className={`flex flex-col justify-center shadow-sm items-center absolute h-[24px] top-[70px] left-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isBeginning ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
                             }`}
                         aria-label="Previous slide"
                     >
@@ -345,7 +345,7 @@ const ProjectCategoryTabs = () => {
 
                     <button
                         onClick={() => swiperRef.current?.slideNext()}
-                        className={`flex flex-col justify-center items-center absolute h-[24px] top-[70px] right-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isEnd ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
+                        className={`flex flex-col justify-center shadow-sm items-center absolute h-[24px] top-[70px] right-0 w-[24px] z-10 backdrop-blur-[10px] rounded-full hover:bg-white transition-all duration-300 ${isEnd ? 'opacity-0 pointer-events-none' : 'opacity-100 bg-white'
                             }`}
                         aria-label="Next slide"
                     >
