@@ -14,6 +14,9 @@
   --color-medium-grey: #979797;
   --color-extra-light-grey: #E0E0E0;
   /* font-sizes */
+  --font-title-24: 24px;
+  --line-height-title-24: 34px;
+
   --font-product-16: 16px;
   --line-height-product-16: 26px;
 
@@ -55,11 +58,16 @@
 }
 
 /* New Classes Start */
+.font-card-24 {
+  font-size: var(--font-title-24);
+  line-height: var(--line-height-title-24)
+}
 
 .font-product-16 {
   font-size: var(--font-product-16);
   line-height: var(--line-height-product-16);
 }
+
 .text-extra-light-grey {
   color: var(--color-extra-light-grey);
 }
@@ -95,6 +103,7 @@
 .border-medium-grey {
   border-color: var(--color-medium-grey);
 }
+
 /* New Classes End */
 
 @media (prefers-color-scheme: dark) {
@@ -162,6 +171,9 @@ body {
 @media (max-width: 639px) {
   :root {
     /* font-sizes */
+    --font-title-24: 22px;
+    --line-height-title-24: 32px;
+
     --font-top-nav-12: 10px;
     --line-height-top-nav-12: 100%;
 
@@ -230,6 +242,8 @@ body {
   font-size: var(--font-text-18);
   line-height: var(--line-height-text-18);
 }
+
+
 
 .font-section-title-32 {
   font-size: var(--font-section-title-32);
