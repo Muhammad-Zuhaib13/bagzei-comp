@@ -130,7 +130,7 @@ const ProductDetailsDesktop = ({ data }: { data: any }) => {
             {/* RIGHT — sticky panel */}
             <div
                 ref={rightPanelRef}
-                className="w-[45%] self-start"
+                className="w-[50%] self-start"
                 style={{
                     position: 'sticky',
                     top: `${NAVBAR_HEIGHT}px`,
